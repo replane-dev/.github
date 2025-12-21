@@ -1,4 +1,4 @@
-# [Replane](https://replane.dev) - Dynamic configuration for apps and services
+# [Replane](https://replane.dev) — Dynamic configuration for apps and services
 
 🚀 **Ship without risk** — feature flags & gradual rollouts  
 ⚡ **Immediate updates** — real-time sync via SSE  
