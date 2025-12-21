@@ -2,9 +2,9 @@
 
 **Self-hosted dynamic configuration.** Change app behavior instantly—no redeploys.
 
-🚀 Feature flags & gradual rollouts  
-⚡ Real-time sync via SSE  
-🔄 Version history & instant rollback  
-🎯 User targeting & A/B testing  
-✅ Optional change approvals  
-🐳 Self-hosted with Docker
+🚀 Ship without risk — feature flags & gradual rollouts  
+⚡ Immediate updates — real-time sync via SSE  
+🔄 Undo mistakes fast — version history & instant rollback  
+🎯 Personalize experiences — user targeting & A/B testing  
+✅ Prevent bad changes — optional approval workflows  
+🐳 Keep your data — fully self-hosted with Docker
