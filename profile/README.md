@@ -1,8 +1,8 @@
 # [Replane](https://replane.dev) — dynamic configuration for apps and services
 
-🚀 **Ship without risk** — feature flags & gradual rollouts  
-⚡ **Immediate updates** — real-time sync via SSE  
-🔄 **Undo mistakes fast** — version history & instant rollback  
-🎯 **Personalize experiences** — user targeting & A/B testing  
-✅ **Prevent bad changes** — optional approval workflows  
-🐳 **Keep your data** — fully self-hosted with Docker
+🚀 **Ship safely** with feature flags and gradual rollouts
+⚡ **Apply changes instantly** with real-time sync (SSE)
+🔄 **Roll back fast** with versioned config history
+🎯 **Target users** and run A/B experiments
+✅ **Control changes** with optional approvals
+🐳 **Stay in control** with fully self-hosted Docker deploys
