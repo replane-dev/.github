@@ -1,6 +1,6 @@
 # Replane
 
-**Self-hosted dynamic configuration.** Change app behavior instantly—no redeploys.
+**Dynamic configuration for apps and services.** Change app behavior instantly—no redeploys.
 
 🚀 **Ship without risk** — feature flags & gradual rollouts  
 ⚡ **Immediate updates** — real-time sync via SSE  
