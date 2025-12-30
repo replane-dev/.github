@@ -8,7 +8,9 @@ on:
 jobs:
   cla:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request_target' || (github.event_name == 'issue_comment' && github.event.issue.pull_request)
+    # Note: The if condition was removed because when called via workflow_call,
+    # github.event_name is 'workflow_call', not the original trigger.
+    # The calling workflow handles the proper trigger conditions.
     steps:
       - uses: contributor-assistant/github-action@v2
         env:
@@ -21,4 +23,3 @@ jobs:
           remote-repository-name: .github
           branch: 'main'
           allowlist: 'bot*,dependabot*,renovate*'
-
