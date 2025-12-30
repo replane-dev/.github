@@ -12,10 +12,10 @@ jobs:
     # github.event_name is 'workflow_call', not the original trigger.
     # The calling workflow handles the proper trigger conditions.
     steps:
-      - uses: contributor-assistant/github-action@v2.6.1
+      - uses: contributor-assistant/github-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_ACCESS_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_TOKEN }}
         with:
           path-to-signatures: "signatures.json"
           path-to-document: "https://github.com/replane-dev/.github/blob/main/CLA.md"
