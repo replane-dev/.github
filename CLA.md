@@ -47,4 +47,3 @@ I have read the CLA Document and I hereby sign the CLA
 ```
 
 You only need to sign the CLA once. Your signature will be recorded and will apply to all future contributions.
-
