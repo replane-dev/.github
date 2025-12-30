@@ -18,8 +18,8 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_TOKEN }}
         with:
           path-to-signatures: "signatures.json"
-          path-to-document: "https://github.com/replane/.github/blob/main/CLA.md"
-          remote-organization-name: replane
+          path-to-document: "https://github.com/replane-dev/.github/blob/main/CLA.md"
+          remote-organization-name: replane-dev
           remote-repository-name: .github
           branch: "main"
           allowlist: "bot*,dependabot*,renovate*"
