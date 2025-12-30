@@ -8,21 +8,7 @@ on:
 jobs:
   cla:
     runs-on: ubuntu-latest
-    # Note: The if condition was removed because when called via workflow_call,
-    # github.event_name is 'workflow_call', not the original trigger.
-    # The calling workflow handles the proper trigger conditions.
     steps:
-      - name: Preflight ensure PAT secret is present
-        shell: bash
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_ACCESS_TOKEN }}
-        run: |
-          if [[ -z "${PERSONAL_ACCESS_TOKEN}" ]]; then
-            echo "Missing required secret: CLA_ACCESS_TOKEN (used as PERSONAL_ACCESS_TOKEN)."
-            echo "If set as an Organization secret, ensure it's an Actions secret and granted to this repository."
-            exit 1
-          fi
-
       - uses: contributor-assistant/github-action@v2.6.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
