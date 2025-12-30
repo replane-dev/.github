@@ -2,7 +2,7 @@ name: CLA Assistant
 on:
   workflow_call:
     secrets:
-      CLA_TOKEN:
+      CLA_ACCESS_TOKEN:
         required: true
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - uses: contributor-assistant/github-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_TOKEN }}
+          CLA_ACCESS_TOKEN: ${{ secrets.CLA_ACCESS_TOKEN }}
         with:
           path-to-signatures: "signatures.json"
           path-to-document: "https://github.com/replane-dev/.github/blob/main/CLA.md"
